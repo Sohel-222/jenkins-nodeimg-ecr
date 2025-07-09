@@ -7,7 +7,7 @@ resource "aws_ecr_repository" "app_repo" {
 }
 
 resource "aws_sns_topic" "notify_topic" {
-  name = "image-push-topic"
+  name = "mytopic"
 }
 
 resource "aws_lambda_function" "image_push_handler" {
